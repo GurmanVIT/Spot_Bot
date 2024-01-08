@@ -4,8 +4,10 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import WelcomeScreen from './assets/component/WelcomeScreen/Index';
 import LogIn from './assets/component/LogIn/Index';
 import SignUp from './assets/component/SignUp/Index';
-import Back from './assets/src/svg/Back';
 import Verification from './assets/component/Verification/Index';
+import EnterCode from './assets/component/Verification/EnterCode';
+import Back from './assets/component/Back/Index';
+import HomePage from './assets/component/HomePage/Index';
 
 const Stack = createNativeStackNavigator();
 
@@ -20,6 +22,8 @@ const App = () => {
         <Stack.Screen name="SignUp" component={SignUp} />
         <Stack.Screen name="Verification" component={Verification} />
         <Stack.Screen name="Back" component={Back} />
+        <Stack.Screen name="EnterCode" component={EnterCode} />
+        <Stack.Screen name="HomePage" component={HomePage} />
       </Stack.Navigator>
     </NavigationContainer>
   );

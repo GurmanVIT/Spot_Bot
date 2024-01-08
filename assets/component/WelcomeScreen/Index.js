@@ -1,12 +1,17 @@
 import { View, Text, StyleSheet, ScrollView, StatusBar } from 'react-native';
 import React from 'react';
 import Vector from '../../src/svg/Vector';
+import BackImg from '../../src/svg/BackImg';
 
 
 const WelcomeScreen = ({ navigation }) => {
 
     return (
         <ScrollView style={styles.container} behavior="padding">
+            <View style={{ marginTop: 20 }}>
+                <BackImg onPress={() => { navigation.navigate("Back") }}
+                />
+            </View>
             <StatusBar
                 backgroundColor="#313864"
             />

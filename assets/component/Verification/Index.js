@@ -1,15 +1,20 @@
-import { View, Text, StyleSheet, ScrollView, StatusBar, TouchableOpacity, TextInput } from 'react-native';
+import { View, Text, StyleSheet, ScrollView, StatusBar, TouchableOpacity } from 'react-native';
 import React, { useState } from 'react';
 import { CountryPicker } from "react-native-country-codes-picker";
+import BackImg from '../../src/svg/BackImg';
 
 
-const Verification = ({ }) => {
+const Verification = ({ navigation }) => {
 
     const [show, setShow] = useState(false);
     const [countryCode, setCountryCode] = useState('');
 
     return (
         <ScrollView style={styles.container} behavior="padding">
+            <View style={{ marginTop: 20 }}>
+                <BackImg onPress={() => { navigation.navigate("Back") }}
+                />
+            </View>
             <StatusBar
                 backgroundColor="#313864"
             />
@@ -64,12 +69,10 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         color: '#000',
         fontSize: 23,
-        textAlign: 'center',
         paddingBottom: 10,
         marginTop: 20,
     },
     paragraph: {
-        textAlign: 'center',
         marginBottom: 30,
         color: '#858494'
     },

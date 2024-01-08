@@ -1,6 +1,6 @@
 import { View, Text, TextInput, StyleSheet, ScrollView, StatusBar } from 'react-native';
 import React, { useState } from 'react';
-import Back from '../../src/svg/Back';
+import BackImg from '../../src/svg/BackImg';
 import SpotBot from '../../src/svg/SpotBot';
 import LoginIcon from '../../src/svg/LoginIcon';
 import Password from '../../src/svg/Password';
@@ -22,7 +22,7 @@ const SignUp = ({ navigation }) => {
             />
             <View style={{ marginHorizontal: 10, }}>
                 <View style={{ marginTop: 20 }}>
-                    <Back onPress={() => { navigation.goBack() }}
+                    <BackImg onPress={() => { navigation.goBack() }}
                     />
                 </View>
                 <View style={{ marginTop: 30, marginBottom: 30 }}>

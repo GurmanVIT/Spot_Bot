@@ -1,6 +1,6 @@
 import { View, Text, TextInput, StyleSheet, ScrollView, StatusBar, TouchableOpacity } from 'react-native';
 import React, { useState } from 'react';
-import Back from '../../src/svg/Back';
+import BackImg from '../../src/svg/BackImg';
 import SpotBot from '../../src/svg/SpotBot';
 import LoginIcon from '../../src/svg/LoginIcon';
 import Google from '../../src/svg/Google';
@@ -15,7 +15,8 @@ const LogIn = ({ navigation }) => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
-    const [toggleCheckBox, setToggleCheckBox] = useState(false);
+    const [toggleCheckBox, setToggleCheckBox] = useState(false)
+
 
     return (
         <ScrollView style={styles.container} behavior="padding">
@@ -24,7 +25,7 @@ const LogIn = ({ navigation }) => {
             />
             <View style={{ marginHorizontal: 10, }}>
                 <View style={{ marginTop: 20 }} >
-                    <Back onPress={() => { navigation.goBack() }}
+                    <BackImg onPress={() => { navigation.goBack() }}
                     />
                 </View>
                 <View style={{ marginTop: 30, marginBottom: 30 }}>
@@ -34,7 +35,7 @@ const LogIn = ({ navigation }) => {
                 <View style={{ backgroundColor: '#fff', padding: 20, borderRadius: 20, }}>
                     <Text style={styles.inner}>Login</Text>
                     <View style={styles.inputContainer}>
-                        <Text style={styles.Label}>Email</Text>
+                        {/* <Text style={{ position: 'absolute', top: 10, left: 40 }}>Email</Text> */}
                         <LoginIcon style={{ position: 'absolute', bottom: 21, left: 10, }} />
                         <TextInput
                             style={styles.input}
@@ -42,19 +43,19 @@ const LogIn = ({ navigation }) => {
                             value={email}
                             keyboardType="email-address"
                             onChangeText={(val) => setEmail(val)}
-                        // placeholder='Email'
+                            placeholder='Email'
                         />
                     </View>
 
                     <View style={styles.inputContainer}>
-                        <Text style={{ position: 'absolute', top: 25, left: 40, color: '#A9ABA9', fontSize: 16 }}>Password</Text>
-                        <Password style={{ position: 'absolute', top: 25, left: 10 }} />
+                        {/* <Text style={{ position: 'absolute', top: 10, left: 40 }}>Password</Text> */}
+                        <Password style={{ position: 'absolute', top: 20, left: 10 }} />
                         <TextInput
                             style={styles.input}
                             autoCapitalize="none"
                             value={password}
                             onChangeText={(val) => setPassword(val)}
-                            // placeholder='Password'
+                            placeholder='Password'
                             secureTextEntry
                         />
                     </View>
@@ -62,7 +63,7 @@ const LogIn = ({ navigation }) => {
                     <Text style={styles.forgot} onPress={() => navigation.navigate("Verification")}>Forgot Password?</Text>
 
                     <View style={styles.button}>
-                        <Text style={styles.buttonText} >Login</Text>
+                        <Text style={styles.buttonText}>Login</Text>
                     </View>
                     <Text style={{ textAlign: 'center', marginVertical: 20 }}>Or</Text>
                     <View style={{ justifyContent: 'center', gap: 20, flexDirection: 'row', marginBottom: 30 }}>
@@ -108,12 +109,6 @@ const styles = StyleSheet.create({
     inputContainer: {
         marginBottom: 20,
         position: 'relative'
-    },
-    Label: {
-        position: 'absolute', top: 25, left: 40, color: '#A9ABA9', fontSize: 16
-    },
-    focusedLabel: {
-        display: 'none',
     },
     input: {
         paddingTop: 20,

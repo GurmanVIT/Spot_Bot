@@ -1,7 +1,7 @@
 import * as React from "react";
 import Svg, { Path } from "react-native-svg";
 
-function Back(props) {
+function BackImg(props) {
     return (
         <Svg
             width={30}
@@ -19,4 +19,4 @@ function Back(props) {
     )
 }
 
-export default Back;
+export default BackImg;

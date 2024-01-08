@@ -1,4 +1,4 @@
-<>
+{/* <>
     <color name="colorPrimary">#549EE8</color>
     <color name="colorPrimaryDark">#1C4D7E</color>
     <color name="colorAccent">#549EE8</color>
@@ -39,4 +39,4 @@
     <color name="button_color">#549EE8</color>
 
     <color name="bottom_menu_color">#F9F6F6</color>
-</>
+</> */}
