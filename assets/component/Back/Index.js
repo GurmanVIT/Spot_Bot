@@ -6,9 +6,7 @@ const Back = ({ navigation }) => {
         <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
             <Text style={{ marginVertical: 10, fontSize: 17, fontWeight: "bold" }} onPress={() => { navigation.navigate("LogIn") }}>LogIn</Text>
             <Text style={{ marginVertical: 10, fontSize: 17, fontWeight: "bold" }} onPress={() => { navigation.navigate("SignUp") }}>SignUp</Text>
-            <Text style={{ marginVertical: 10, fontSize: 17, fontWeight: "bold" }} onPress={() => { navigation.navigate("WelcomeScreen") }}>WelcomeScreen</Text>
-            <Text style={{ marginVertical: 10, fontSize: 17, fontWeight: "bold" }} onPress={() => { navigation.navigate("Verification") }}>Verification</Text>
-            <Text style={{ marginVertical: 10, fontSize: 17, fontWeight: "bold" }} onPress={() => { navigation.navigate("EnterCode") }}>EnterCode</Text>
+            <Text style={{ marginVertical: 10, fontSize: 17, fontWeight: "bold" }} onPress={() => { navigation.navigate("Forgot") }}>Forgot</Text>
             <Text style={{ marginVertical: 10, fontSize: 17, fontWeight: "bold" }} onPress={() => { navigation.navigate("HomePage") }}>HomePage</Text>
         </View>
     )

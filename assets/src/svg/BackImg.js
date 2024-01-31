@@ -4,18 +4,21 @@ import Svg, { Path } from "react-native-svg";
 function BackImg(props) {
     return (
         <Svg
-            width={30}
-            height={20}
-            viewBox="0 0 30 20"
+            width={9}
+            height={18}
+            viewBox="0 0 9 18"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
             {...props}
         >
             <Path
-                d="M2 10l-.707-.707L.586 10l.707.707L2 10zm27 1a1 1 0 100-2v2zM10.293.293l-9 9 1.414 1.414 9-9L10.293.293zm-9 10.414l9 9 1.414-1.414-9-9-1.414 1.414zM2 11h27V9H2v2z"
-                fill="#fff"
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M1.507 12.636a5.142 5.142 0 01-.194-7.068l.194-.205L6.805.377A1.286 1.286 0 018.73 2.074l-.107.12-5.298 4.988a2.571 2.571 0 00-.15 3.473l.15.163 5.298 4.987a1.285 1.285 0 01-1.697 1.925l-.121-.107-5.298-4.987z"
+                fill="#000"
             />
         </Svg>
+
     )
 }
 
