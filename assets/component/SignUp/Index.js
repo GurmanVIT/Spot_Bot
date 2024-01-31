@@ -106,7 +106,7 @@ const SignUp = ({ navigation }) => {
                         <Text style={styles.label} onPress={() => { setToggleCheckBox(!toggleCheckBox) }}>By Logging / SigningUp in, you agree to our <Text style={{ fontWeight: "bold", color: '#2248F4' }}>Terms of Services</Text>and<Text style={{ fontWeight: "bold", color: '#2248F4' }}> Privacy Policy</Text> </Text>
                     </View>
 
-                    <Text style={styles.buttonText} onPress={() => { navigation.goBack() }}>Sign Up</Text>
+                    <Text style={styles.buttonText}>Sign Up</Text>
 
                     <Text style={{ color: "#2248F4", textAlign: 'center', marginTop: 15, marginBottom: 30 }}>Don'ts have an account?<Text style={{
                         fontWeight: '600', textDecorationLine: 'underline'
