@@ -4,7 +4,7 @@ import BackImg from '../../src/svg/BackImg';
 import LoginIcon from '../../src/svg/LoginIcon';
 import Password from '../../src/svg/Password';
 import Referral from '../../src/svg/Referral';
-import CheckBox from '@react-native-community/checkbox';
+// import CheckBox from '@react-native-community/checkbox';
 import Neom from '../../src/svg/Neom';
 
 
@@ -98,11 +98,11 @@ const SignUp = ({ navigation }) => {
                         />
                     </View>
                     <View style={styles.checkboxContainer}>
-                        <CheckBox
+                        {/* <CheckBox
                             disabled={false}
                             value={toggleCheckBox}
                             onValueChange={(newValue) => setToggleCheckBox(newValue)}
-                        />
+                        /> */}
                         <Text style={styles.label} onPress={() => { setToggleCheckBox(!toggleCheckBox) }}>By Logging / SigningUp in, you agree to our <Text style={{ fontWeight: "bold", color: '#2248F4' }}>Terms of Services</Text>and<Text style={{ fontWeight: "bold", color: '#2248F4' }}> Privacy Policy</Text> </Text>
                     </View>
 
